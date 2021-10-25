@@ -2,12 +2,12 @@ const mains = document.querySelectorAll(".main");
 
 mains.forEach((ele) => {
   ele.addEventListener("click", () => {
-    remove();
+    removeClassActive();
     ele.classList.add("active");
   });
 });
 
-const remove = () => {
+const removeClassActive = () => {
   mains.forEach((ele) => {
     ele.classList.remove("active");
   });
